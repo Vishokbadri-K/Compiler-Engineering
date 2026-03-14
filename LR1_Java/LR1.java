@@ -126,6 +126,7 @@ class LR1
         System.out.println("\tLR(1) GOTO TABLE");
         System.out.println("======================================");
 
+        // Print GOTO entries in sorted order of states and non-terminals
         for(int s : sortedStates)
         {
             if(gotoTable.containsKey(s))
@@ -139,6 +140,7 @@ class LR1
         }
     }
 
+    // LR(1) parsing algorithm
     static void parse(String input)
     {
         Stack<Integer> stateStack = new Stack<>();
@@ -148,6 +150,7 @@ class LR1
 
         int i = 0;
 
+        // %-30s indicates left-alignment with a width of 30 characters
         System.out.println("\n===========================================================================");
         System.out.printf("%-30s %-20s %-20s\n", "Stack", "Input", "Action");
         System.out.println("===========================================================================");
@@ -165,6 +168,7 @@ class LR1
             String stackStr = buildStackString(symbolStack, stateStack);
             String remainingInput = input.substring(i);
 
+            // Handle missing action entry
             if(action == null)
             {
                 System.out.printf("%-30s %-20s ERROR\n", stackStr, remainingInput);
@@ -174,15 +178,17 @@ class LR1
                 return;
             }
 
+            // Process action
             if(action.equals("acc"))
             {
                 System.out.printf("%-30s %-20s ACCEPT\n", stackStr, remainingInput);
                 System.out.println("\n===========================================================================");
                 System.out.println("\t\tString Accepted");
-                System.out.println("=============================================================================");
+                System.out.println("===========================================================================");
                 return;
             }
 
+            // Shift action
             else if(action.startsWith("s"))
             {
                 int nextState = Integer.parseInt(action.substring(1));
@@ -195,6 +201,7 @@ class LR1
                 i++;
             }
 
+            // Reduce action
             else if(action.startsWith("r"))
             {
                 int prodNum = Integer.parseInt(action.substring(1));
@@ -234,6 +241,7 @@ class LR1
         }
     }
 
+    // Helper method to build stack string for display
     static String buildStackString(Stack<String> symbolStack, Stack<Integer> stateStack)
     {
         StringBuilder sb = new StringBuilder();
