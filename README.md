@@ -10,16 +10,6 @@ Some programs may use tools such as **Lex and Yacc**, which are primarily suppor
 
 ---
 
-## 🎯 Objectives  
-
-- Understand the **basic phases of a compiler**
-- Learn how **tokens and lexical analysis** work
-- Practice **syntax analysis and grammar parsing**
-- Implement algorithms used in **compiler design**
-- Gain hands-on experience with **Lex and Yacc tools**
-
----
-
 ## 🧠 Topics Covered  
 
 The repository includes programs related to:
@@ -169,6 +159,7 @@ Among these, **WSL with Ubuntu is the most reliable option** for running Lex and
  ├── If else/
  ├── If test/
  ├── LL1_Java/
+ ├── LR1_Java/
  ├── Looping Statements/
  ├── Proc calls & Arrays/
  ├── Switch/
