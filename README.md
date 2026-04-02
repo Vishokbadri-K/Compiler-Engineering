@@ -14,6 +14,10 @@ Some programs may use tools such as **Lex and Yacc**, which are primarily suppor
 
 The repository includes programs related to:
 
+### 🔹 Backend Machine Code Generation
+- Reads Input expression and computes Three Address Code (TAC)
+- Generate x86 Machine code for the TAC
+
 ### 🔹 Calculator Program
 - Simple expression evaluation  
 - Arithmetic operations implementation  
@@ -30,6 +34,10 @@ The repository includes programs related to:
 ### 🔹 If Test
 - Testing conditional statements within parsing or grammar contexts  
 
+### 🔹 If to Switch Statement
+- Reads input 'if' statement from User
+- Generate equivalent Switch statement code
+
 ### 🔹 LL1 Java
 - Implementation of **LL(1) parsing concepts**  
 - Construction or usage of predictive parsing techniques  
@@ -38,13 +46,26 @@ The repository includes programs related to:
 - Recognition or implementation of loop constructs  
 - Demonstration of control flow handling in compilers  
 
+### 🔹 LR1 Java
+- Implementation of **LR(1) parsing concepts**  
+- Construction or usage of predictive parsing techniques
+
 ### 🔹 Procedure Calls & Arrays
 - Handling procedure calls  
 - Array-related grammar handling  
 
+### 🔹 Common Sub-Expression Elimination Java
+- Reads input Three Address Code from User  
+- Checks for Common Sub-Expression among given TACs
+- Eliminates (Replaces) Common Sub-Expressions found
+
 ### 🔹 Switch
 - Demonstration of **switch-case constructs**  
-- Parsing or evaluation logic  
+- Parsing or evaluation logic
+
+### 🔹 TAC & Postfix Intermediate Codes
+- Reads input expression from File (File Handling)  
+- Construction of intermediate TAC and postfix codes
 
 ### 🔹 Tokens
 - Lexical analysis concepts  
@@ -154,15 +175,19 @@ Among these, **WSL with Ubuntu is the most reliable option** for running Lex and
 
 ```
 /Compiler-Engineering
+ ├── Backend Machine Code Generaation/
  ├── Calculator Prog/
  ├── First & Follow using Java/
  ├── If else/
  ├── If test/
+ ├── If Statement to Switch Statement/
  ├── LL1_Java/
  ├── LR1_Java/
  ├── Looping Statements/
  ├── Proc calls & Arrays/
+ ├── Common Sub-Expression Elimination/ 
  ├── Switch/
+ ├── Three Address and Postfix Intermediate Codes/ 
  ├── Tokens/
  └── README.md
 ```
