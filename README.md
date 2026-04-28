@@ -46,6 +46,10 @@ The repository includes programs related to:
 - Recognition or implementation of loop constructs  
 - Demonstration of control flow handling in compilers  
 
+### 🔹 LocalList Scheduling
+- Demonstration of LocalList Scheduling using Java
+- Uses Collection class - Lists/ArrayLists implementation  
+
 ### 🔹 LR1 Java
 - Implementation of **LR(1) parsing concepts**  
 - Construction or usage of predictive parsing techniques
